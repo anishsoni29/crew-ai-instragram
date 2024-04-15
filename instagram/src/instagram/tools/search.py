@@ -52,4 +52,8 @@ class SearchTools:
   
   
 if __name__ == "__main__":
-  print(SearchTools.open_page("https://www.python.org/"))
+    from dotenv import load_dotenv 
+    load_dotenv()
+#   print(SearchTools.open_page("https://www.python.org/"))
+    print(SearchTools.search_internet("how to make a waffle"))
+    print(SearchTools.search_instagram("how to make a chocolate"))
